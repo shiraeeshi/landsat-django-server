@@ -1,6 +1,6 @@
 # Landsat django server project
 
-This project shows how to create a tile server with GeoTrellis ingested tiles.
+This project shows how to create a tile server with GeoTrellis ingested tiles (see `landsat/views.py`).
 
 #### Dependencies
 
