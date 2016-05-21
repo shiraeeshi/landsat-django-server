@@ -27,12 +27,4 @@ def zxy(request, zoom, x, y):
     ndvi = tile.convert(DoubleConstantNoDataCellType).combineDouble(0, 1,
             lambda r, ir: (ir - r) / (ir + r) if isData(r) and isData(ir) else float("nan"))
     pic = renderPng(ndvi, colorMap).bytes
-    import StringIO
-    f = StringIO.StringIO(pic)
-    print("first 20 (pic): {twen}".format(twen=[f.read(1) for i in xrange(0,20)]))
-    f.close()
     return HttpResponse(pic, 'image/png')
-    #with open('/home/leroy/Downloads/pages/9306.png') as f:
-    #    print("first 20 (other): {twen}".format(twen=[f.read(1) for i in xrange(0,20)]))
-    #    f.seek(0)
-    #    return HttpResponse(f.read(), 'image/png')
