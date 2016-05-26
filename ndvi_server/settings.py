@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
+LANDSAT_DIR="/home/leroy/landsat"
 TUTORIAL_COLORMAP = "0:ffffe5ff;0.1:f7fcb9ff;0.2:d9f0a3ff;0.3:addd8eff;0.4:78c679ff;0.5:41ab5dff;0.6:238443ff;0.7:006837ff;1:004529ff"
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

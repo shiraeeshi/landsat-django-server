@@ -10,6 +10,7 @@ This project shows how to create a tile server with GeoTrellis ingested tiles (s
 #### How to run
 
 - Follow the readme in https://github.com/geotrellis/geotrellis-landsat-tutorial
+- Specify the location of the landsat tutorial repository's root directory in the `LANDSAT_DIR` setting in `ndvi_server/settings.py` file
 - Make sure that you have geotrellis-python installed
 - `cd` into `landsat-django-server` directory (the root directory of this repository) and then run:
 

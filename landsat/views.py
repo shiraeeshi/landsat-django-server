@@ -12,7 +12,10 @@ from geotrellis.spark.io.package_scala import TileNotFoundError
 from geotrellis.raster.render.ColorMap import ColorMap
 from geotrellis.raster.render.PngRenderMethods import renderPng
 
-flv = file_value_reader('/home/leroy/landsat/data/catalog')
+import os.path
+
+catalog_dir = os.path.join(settings.LANDSAT_DIR, 'data/catalog')
+flv = file_value_reader(catalog_dir)
 colorMap = ColorMap.fromStringDouble(settings.TUTORIAL_COLORMAP)
 
 def zxy(request, zoom, x, y):
